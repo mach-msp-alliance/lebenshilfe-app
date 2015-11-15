@@ -25,7 +25,6 @@ namespace Lebenshilfe.App
         public MainPage()
         {
             this.InitializeComponent();
-            // Kommentar
         }
     }
 }
