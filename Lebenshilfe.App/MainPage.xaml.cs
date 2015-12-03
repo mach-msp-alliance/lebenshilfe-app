@@ -26,5 +26,34 @@ namespace Lebenshilfe.App
         {
             this.InitializeComponent();
         }
+
+        private async void RefreshItems()
+        {
+            // Verbinden zum MobileService:
+            MobileServiceClient mobileServiceClient = new MobileServiceClient(
+                  "https://machapp.azure-mobile.net/",
+                  "wpLplVeEPPeUkElYJRSPrdrrDBIPDy95"
+            );
+
+
+            // Employee Tabelle laden. 
+            IMobileServiceTable<Employee> employeeTable = mobileServiceClient.GetTable<Employee>();
+            // Neuen Datensatz anlegen
+            Employee em = new Employee() { Firstname = "Sebastian", Lastname = "Küsters" };
+            // em in Datenbank speichern
+            await employeeTable.InsertAsync(em);
+            // Daten aus Tabelle Employee laden
+            var empList = await employeeTable.ToCollectionAsync();
+            // Neuen Datensatz ändern
+            empList.Last().Firstname = "Sebastian Update :)";
+            // Geänderten Datensatz speichern 
+            await employeeTable.UpdateAsync(empList.Last());
+            // Ersten Datensatz löschen 
+            await employeeTable.DeleteAsync(empList.First());
+            // Aktuellen Daten aus Tabelle laden 
+            var updatedList = await employeeTable.ToCollectionAsync();
+
+            // Einfach Breakpoint setzen und die Listen vergleichen ;) 
+        }
     }
 }
