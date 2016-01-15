@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="Blue">
+        <Grid>
+            <TextBox x:Name="textBox" Margin="0,448,0,462" TextWrapping="Wrap" Text="" Width="400" d:LayoutOverrides="TopPosition, BottomPosition" Background="White" PlaceholderText="Passwort" HorizontalAlignment="Center"/>
+            <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Height="50" Margin="0,0,0,374" VerticalAlignment="Bottom" Width="300" ClickMode="Press"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Center" Height="50" Margin="0,362,0,0" Width="400" PlaceholderText="Benutzername" Background="White"/>
+        </Grid>
     </Grid>
 </Page>

@@ -100,6 +100,30 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\BackButton.xaml.cs">
+      <DependentUpon>BackButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BadButton.xaml.cs">
+      <DependentUpon>BadButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CheckButton.xaml.cs">
+      <DependentUpon>CheckButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GoodButton.xaml.cs">
+      <DependentUpon>GoodButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Employee_Tile.xaml.cs">
+      <DependentUpon>Employee_Tile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NaturalButton.xaml.cs">
+      <DependentUpon>NaturalButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Location_Tile.xaml.cs">
+      <DependentUpon>Location_Tile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Team_Tile.xaml.cs">
+      <DependentUpon>Team_Tile.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -130,7 +154,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Gruppen_1_2.xaml">
+    <Page Include="Pages\Groups_1_2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,7 +170,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Standort_1_1.xaml">
+    <Page Include="Pages\Location_1_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\BackButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\BadButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\CheckButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\GoodButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Employee_Tile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\NaturalButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Location_Tile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Team_Tile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
